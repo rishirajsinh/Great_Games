@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Game Hub</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>🎮 Game Hub</h1>
+    <button onclick="toggleTheme()">🌙 / ☀️</button>
+</header>
+
+<div class="container">
+    <div class="games">
+        <div class="card" onclick="loadGame('games/game1/index.html')">
+            <img src="assets/thumbnails/game1.png">
+            <p>Tic-Tac-Toe Game</p>
+        </div>
+        <div class="card" onclick="loadGame('games/game2/index.html')">
+            <img src="assets/thumbnails/game2.png">
+            <p>Click Counter Game</p>
+        </div>
+        <div class="card" onclick="loadGame('games/game3/index.html')">
+            <img src="assets/thumbnails/game3.png">
+            <p>Color Guessing Game</p>
+        </div>
+        <div class="card" onclick="loadGame('games/game4/index.html')">
+            <img src="assets/thumbnails/game4.png">
+            <p>Whack-a-Mole</p>
+        </div>
+        <div class="card" onclick="loadGame('games/game5/index.html')">
+            <img src="assets/thumbnails/game5.png">
+            <p>Typing Speed Test</p>
+        </div>
+        <div class="card" onclick="loadGame('games/game6/index.html')">
+            <img src="assets/thumbnails/game6.png">
+            <p>Memory Flip Card Game</p>
+        </div>
+    </div>
+
+    <div class="player">
+        <div class="controls">
+            <button onclick="fullscreen()">⛶ Fullscreen</button>
+        </div>
+        <iframe id="gameFrame"></iframe>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
